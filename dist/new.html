@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark/Light Mode</title>
+  <link rel="stylesheet" href="output.css"> <!-- Tailwind CSS -->
+</head>
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white">
+  <div class="container mx-auto p-5">
+    <h1 class="text-3xl font-bold">Welcome to the Dark/Light Mode Website</h1>
+    <button id="toggleBtn" class="mt-5 py-2 px-4 bg-blue-500 text-white rounded">
+      Toggle Dark/Light Mode
+    </button>
+  </div>
+
+  <script>
+    const toggleBtn = document.getElementById('toggleBtn');
+    
+    toggleBtn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>
